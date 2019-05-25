@@ -1,0 +1,260 @@
+2019-02-10 19:02:42.098 DEBUG [localhost-startStop-1][LogFactory.java:135] - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2019-02-10 19:02:43.780 DEBUG [localhost-startStop-1][LoggerFactory.java:19] - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2019-02-10 19:02:43.821 INFO [localhost-startStop-1][Version.java:30] - HV000001: Hibernate Validator 5.4.1.Final
+2019-02-10 19:02:43.860 DEBUG [localhost-startStop-1][DefaultTraversableResolver.java:70] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-02-10 19:02:43.871 DEBUG [localhost-startStop-1][ConfigurationImpl.java:163] - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2019-02-10 19:02:43.872 DEBUG [localhost-startStop-1][ConfigurationImpl.java:185] - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2019-02-10 19:02:43.875 DEBUG [localhost-startStop-1][ConfigurationImpl.java:199] - Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy69
+2019-02-10 19:02:43.878 DEBUG [localhost-startStop-1][ValidationXmlParser.java:103] - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2019-02-10 19:02:43.881 DEBUG [localhost-startStop-1][ResourceLoaderHelper.java:51] - Trying to load META-INF/validation.xml via user class loader
+2019-02-10 19:02:43.883 DEBUG [localhost-startStop-1][ResourceLoaderHelper.java:58] - Trying to load META-INF/validation.xml via TCCL
+2019-02-10 19:02:43.884 DEBUG [localhost-startStop-1][ResourceLoaderHelper.java:64] - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2019-02-10 19:02:43.885 DEBUG [localhost-startStop-1][ValidationXmlParser.java:110] - No META-INF/validation.xml found. Using annotation based configuration only.
+2019-02-10 19:03:48.705 DEBUG [http-bio-80-exec-5][ConstraintDescriptorImpl.java:640] - Adding composing constraint: ConstraintDescriptorImpl{annotation=javax.validation.constraints.NotNull, payloads=[], hasComposingConstraints=true, isReportAsSingleInvalidConstraint=false, elementType=FIELD, definedOn=DEFINED_LOCALLY, groups=[interface javax.validation.groups.Default], attributes={message={javax.validation.constraints.NotNull.message}, groups=[Ljava.lang.Class;@21a8c9fe, payload=[Ljava.lang.Class;@158595f8}, constraintType=GENERIC}.
+2019-02-10 19:03:48.711 DEBUG [http-bio-80-exec-5][ConstraintDescriptorImpl.java:640] - Adding composing constraint: ConstraintDescriptorImpl{annotation=javax.validation.constraints.NotNull, payloads=[], hasComposingConstraints=true, isReportAsSingleInvalidConstraint=false, elementType=FIELD, definedOn=DEFINED_LOCALLY, groups=[interface javax.validation.groups.Default], attributes={message={javax.validation.constraints.NotNull.message}, groups=[Ljava.lang.Class;@624c68a4, payload=[Ljava.lang.Class;@d6b56b5}, constraintType=GENERIC}.
+2019-02-10 19:03:48.894 INFO [http-bio-80-exec-5][Log4j2Impl.java:106] - {dataSource-1} inited
+2019-02-10 19:03:49.089 DEBUG [http-bio-80-exec-5][SqlSessionUtils.java:97] - Creating a new SqlSession
+2019-02-10 19:03:49.094 DEBUG [http-bio-80-exec-5][SqlSessionUtils.java:128] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@51f4c6e7]
+2019-02-10 19:03:49.103 DEBUG [http-bio-80-exec-5][SpringManagedTransaction.java:87] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@7e316342] will be managed by Spring
+2019-02-10 19:03:49.108 DEBUG [http-bio-80-exec-5][BaseJdbcLogger.java:159] - ==>  Preparing: insert into t_user value(null,?,?,?) 
+2019-02-10 19:03:49.138 DEBUG [http-bio-80-exec-5][BaseJdbcLogger.java:159] - ==> Parameters: hg(String), 111(String), 16602199903(String)
+2019-02-10 19:03:49.194 DEBUG [http-bio-80-exec-5][BaseJdbcLogger.java:159] - <==    Updates: 1
+2019-02-10 19:03:49.196 DEBUG [http-bio-80-exec-5][SqlSessionUtils.java:186] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@51f4c6e7]
+2019-02-10 19:03:49.197 DEBUG [http-bio-80-exec-5][SqlSessionUtils.java:284] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@51f4c6e7]
+2019-02-10 19:03:49.198 DEBUG [http-bio-80-exec-5][SqlSessionUtils.java:310] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@51f4c6e7]
+2019-02-10 19:03:49.200 DEBUG [http-bio-80-exec-5][SqlSessionUtils.java:315] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@51f4c6e7]
+2019-02-10 19:03:56.768 DEBUG [http-bio-80-exec-9][SqlSessionUtils.java:97] - Creating a new SqlSession
+2019-02-10 19:03:56.769 DEBUG [http-bio-80-exec-9][SqlSessionUtils.java:128] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@513f18b9]
+2019-02-10 19:03:56.771 DEBUG [http-bio-80-exec-9][SpringManagedTransaction.java:87] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@7e316342] will be managed by Spring
+2019-02-10 19:03:56.772 DEBUG [http-bio-80-exec-9][BaseJdbcLogger.java:159] - ==>  Preparing: select * from t_user where username = ? 
+2019-02-10 19:03:56.773 DEBUG [http-bio-80-exec-9][BaseJdbcLogger.java:159] - ==> Parameters: hg(String)
+2019-02-10 19:03:56.796 DEBUG [http-bio-80-exec-9][BaseJdbcLogger.java:159] - <==      Total: 1
+2019-02-10 19:03:56.797 DEBUG [http-bio-80-exec-9][SqlSessionUtils.java:186] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@513f18b9]
+2019-02-10 19:03:56.798 DEBUG [http-bio-80-exec-9][SqlSessionUtils.java:284] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@513f18b9]
+2019-02-10 19:03:56.798 DEBUG [http-bio-80-exec-9][SqlSessionUtils.java:310] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@513f18b9]
+2019-02-10 19:03:56.798 DEBUG [http-bio-80-exec-9][SqlSessionUtils.java:315] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@513f18b9]
+2019-02-10 19:04:01.147 DEBUG [http-bio-80-exec-1][SqlSessionUtils.java:97] - Creating a new SqlSession
+2019-02-10 19:04:01.148 DEBUG [http-bio-80-exec-1][SqlSessionUtils.java:128] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2e0041cf]
+2019-02-10 19:04:01.149 DEBUG [http-bio-80-exec-1][SpringManagedTransaction.java:87] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@7e316342] will be managed by Spring
+2019-02-10 19:04:01.150 DEBUG [http-bio-80-exec-1][BaseJdbcLogger.java:159] - ==>  Preparing: select * from t_user where username = ? 
+2019-02-10 19:04:01.152 DEBUG [http-bio-80-exec-1][BaseJdbcLogger.java:159] - ==> Parameters: hg(String)
+2019-02-10 19:04:01.156 DEBUG [http-bio-80-exec-1][BaseJdbcLogger.java:159] - <==      Total: 1
+2019-02-10 19:04:01.157 DEBUG [http-bio-80-exec-1][SqlSessionUtils.java:186] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2e0041cf]
+2019-02-10 19:04:01.158 DEBUG [http-bio-80-exec-1][SqlSessionUtils.java:284] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2e0041cf]
+2019-02-10 19:04:01.159 DEBUG [http-bio-80-exec-1][SqlSessionUtils.java:310] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2e0041cf]
+2019-02-10 19:04:01.161 DEBUG [http-bio-80-exec-1][SqlSessionUtils.java:315] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2e0041cf]
+2019-02-10 19:04:32.128 DEBUG [http-bio-80-exec-3][SqlSessionUtils.java:97] - Creating a new SqlSession
+2019-02-10 19:04:32.129 DEBUG [http-bio-80-exec-3][SqlSessionUtils.java:128] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5d5b2fb9]
+2019-02-10 19:04:32.130 DEBUG [http-bio-80-exec-3][SpringManagedTransaction.java:87] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@7e316342] will be managed by Spring
+2019-02-10 19:04:32.130 DEBUG [http-bio-80-exec-3][BaseJdbcLogger.java:159] - ==>  Preparing: select * from t_user where username = ? 
+2019-02-10 19:04:32.131 DEBUG [http-bio-80-exec-3][BaseJdbcLogger.java:159] - ==> Parameters: hg(String)
+2019-02-10 19:04:32.133 DEBUG [http-bio-80-exec-3][BaseJdbcLogger.java:159] - <==      Total: 1
+2019-02-10 19:04:32.134 DEBUG [http-bio-80-exec-3][SqlSessionUtils.java:186] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5d5b2fb9]
+2019-02-10 19:04:32.135 DEBUG [http-bio-80-exec-3][SqlSessionUtils.java:284] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5d5b2fb9]
+2019-02-10 19:04:32.135 DEBUG [http-bio-80-exec-3][SqlSessionUtils.java:310] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5d5b2fb9]
+2019-02-10 19:04:32.135 DEBUG [http-bio-80-exec-3][SqlSessionUtils.java:315] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5d5b2fb9]
+2019-02-10 19:04:36.968 DEBUG [http-bio-80-exec-3][SqlSessionUtils.java:97] - Creating a new SqlSession
+2019-02-10 19:04:36.968 DEBUG [http-bio-80-exec-3][SqlSessionUtils.java:128] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1caa46c8]
+2019-02-10 19:04:37.018 DEBUG [http-bio-80-exec-3][SpringManagedTransaction.java:87] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@7e316342] will be managed by Spring
+2019-02-10 19:04:37.018 DEBUG [http-bio-80-exec-3][BaseJdbcLogger.java:159] - ==>  Preparing: select count(1) from t_member where 1 = 1 
+2019-02-10 19:04:37.019 DEBUG [http-bio-80-exec-3][BaseJdbcLogger.java:159] - ==> Parameters: 
+2019-02-10 19:04:37.083 DEBUG [http-bio-80-exec-3][BaseJdbcLogger.java:159] - <==      Total: 1
+2019-02-10 19:04:37.084 DEBUG [http-bio-80-exec-3][SqlSessionUtils.java:186] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1caa46c8]
+2019-02-10 19:04:37.086 DEBUG [http-bio-80-exec-3][SqlSessionUtils.java:163] - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1caa46c8] from current transaction
+2019-02-10 19:04:37.088 DEBUG [http-bio-80-exec-3][BaseJdbcLogger.java:159] - ==>  Preparing: select * from t_member where 1 = 1 order by createDate desc limit ?,? 
+2019-02-10 19:04:37.090 DEBUG [http-bio-80-exec-3][BaseJdbcLogger.java:159] - ==> Parameters: 0(Integer), 2(Integer)
+2019-02-10 19:04:37.098 DEBUG [http-bio-80-exec-3][BaseJdbcLogger.java:159] - <==      Total: 2
+2019-02-10 19:04:37.100 DEBUG [http-bio-80-exec-3][SqlSessionUtils.java:186] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1caa46c8]
+2019-02-10 19:04:37.101 DEBUG [http-bio-80-exec-3][SqlSessionUtils.java:284] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1caa46c8]
+2019-02-10 19:04:37.102 DEBUG [http-bio-80-exec-3][SqlSessionUtils.java:310] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1caa46c8]
+2019-02-10 19:04:37.103 DEBUG [http-bio-80-exec-3][SqlSessionUtils.java:315] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1caa46c8]
+2019-02-10 19:04:40.661 DEBUG [http-bio-80-exec-3][SqlSessionUtils.java:97] - Creating a new SqlSession
+2019-02-10 19:04:40.662 DEBUG [http-bio-80-exec-3][SqlSessionUtils.java:128] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@648a87ae]
+2019-02-10 19:04:40.663 DEBUG [http-bio-80-exec-3][SpringManagedTransaction.java:87] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@7e316342] will be managed by Spring
+2019-02-10 19:04:40.663 DEBUG [http-bio-80-exec-3][BaseJdbcLogger.java:159] - ==>  Preparing: select count(1) from t_book b where 1 = 1 
+2019-02-10 19:04:40.665 DEBUG [http-bio-80-exec-3][BaseJdbcLogger.java:159] - ==> Parameters: 
+2019-02-10 19:04:40.712 DEBUG [http-bio-80-exec-3][BaseJdbcLogger.java:159] - <==      Total: 1
+2019-02-10 19:04:40.714 DEBUG [http-bio-80-exec-3][SqlSessionUtils.java:186] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@648a87ae]
+2019-02-10 19:04:40.715 DEBUG [http-bio-80-exec-3][SqlSessionUtils.java:163] - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@648a87ae] from current transaction
+2019-02-10 19:04:40.718 DEBUG [http-bio-80-exec-3][BaseJdbcLogger.java:159] - ==>  Preparing: select b.id id,b.name name,b.author author,b.price price,b.createDate createDate, b.num num,p.id pid,p.name pname from t_book b inner join t_publishing p on p.id = b.pid where 1 = 1 order by b.num desc limit ?,? 
+2019-02-10 19:04:40.720 DEBUG [http-bio-80-exec-3][BaseJdbcLogger.java:159] - ==> Parameters: 0(Integer), 2(Integer)
+2019-02-10 19:04:40.731 DEBUG [http-bio-80-exec-3][BaseJdbcLogger.java:159] - <==      Total: 2
+2019-02-10 19:04:40.732 DEBUG [http-bio-80-exec-3][SqlSessionUtils.java:186] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@648a87ae]
+2019-02-10 19:04:40.733 DEBUG [http-bio-80-exec-3][SqlSessionUtils.java:284] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@648a87ae]
+2019-02-10 19:04:40.734 DEBUG [http-bio-80-exec-3][SqlSessionUtils.java:310] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@648a87ae]
+2019-02-10 19:04:40.735 DEBUG [http-bio-80-exec-3][SqlSessionUtils.java:315] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@648a87ae]
+2019-02-10 19:04:42.537 DEBUG [http-bio-80-exec-3][SqlSessionUtils.java:97] - Creating a new SqlSession
+2019-02-10 19:04:42.539 DEBUG [http-bio-80-exec-3][SqlSessionUtils.java:128] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6958085a]
+2019-02-10 19:04:42.540 DEBUG [http-bio-80-exec-3][SpringManagedTransaction.java:87] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@7e316342] will be managed by Spring
+2019-02-10 19:04:42.541 DEBUG [http-bio-80-exec-3][BaseJdbcLogger.java:159] - ==>  Preparing: select count(1) from t_borrow inner join t_member on t_member.id = t_borrow.mid inner join t_book on t_book.id = t_borrow.bid where 1 = 1 
+2019-02-10 19:04:42.543 DEBUG [http-bio-80-exec-3][BaseJdbcLogger.java:159] - ==> Parameters: 
+2019-02-10 19:04:42.547 DEBUG [http-bio-80-exec-3][BaseJdbcLogger.java:159] - <==      Total: 1
+2019-02-10 19:04:42.548 DEBUG [http-bio-80-exec-3][SqlSessionUtils.java:186] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6958085a]
+2019-02-10 19:04:42.550 DEBUG [http-bio-80-exec-3][SqlSessionUtils.java:163] - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6958085a] from current transaction
+2019-02-10 19:04:42.551 DEBUG [http-bio-80-exec-3][BaseJdbcLogger.java:159] - ==>  Preparing: select t_borrow.*,t_book.name bookName, t_member.name memberName from t_borrow inner join t_member on t_member.id = t_borrow.mid inner join t_book on t_book.id = t_borrow.bid where 1 = 1 order by t_borrow.borrowDate desc limit ?, ? 
+2019-02-10 19:04:42.554 DEBUG [http-bio-80-exec-3][BaseJdbcLogger.java:159] - ==> Parameters: 0(Integer), 2(Integer)
+2019-02-10 19:04:42.585 DEBUG [http-bio-80-exec-3][BaseJdbcLogger.java:159] - <==      Total: 0
+2019-02-10 19:04:42.586 DEBUG [http-bio-80-exec-3][SqlSessionUtils.java:186] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6958085a]
+2019-02-10 19:04:42.586 DEBUG [http-bio-80-exec-3][SqlSessionUtils.java:284] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6958085a]
+2019-02-10 19:04:42.587 DEBUG [http-bio-80-exec-3][SqlSessionUtils.java:310] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6958085a]
+2019-02-10 19:04:42.587 DEBUG [http-bio-80-exec-3][SqlSessionUtils.java:315] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6958085a]
+2019-02-10 19:13:21.995 DEBUG [http-bio-80-exec-4][SqlSessionUtils.java:97] - Creating a new SqlSession
+2019-02-10 19:13:21.997 DEBUG [http-bio-80-exec-4][SqlSessionUtils.java:128] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6c7cdca5]
+2019-02-10 19:13:21.998 DEBUG [http-bio-80-exec-4][SpringManagedTransaction.java:87] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@7e316342] will be managed by Spring
+2019-02-10 19:13:21.999 DEBUG [http-bio-80-exec-4][BaseJdbcLogger.java:159] - ==>  Preparing: select count(1) from t_borrow inner join t_member on t_member.id = t_borrow.mid inner join t_book on t_book.id = t_borrow.bid where 1 = 1 
+2019-02-10 19:13:22.000 DEBUG [http-bio-80-exec-4][BaseJdbcLogger.java:159] - ==> Parameters: 
+2019-02-10 19:13:22.003 DEBUG [http-bio-80-exec-4][BaseJdbcLogger.java:159] - <==      Total: 1
+2019-02-10 19:13:22.005 DEBUG [http-bio-80-exec-4][SqlSessionUtils.java:186] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6c7cdca5]
+2019-02-10 19:13:22.006 DEBUG [http-bio-80-exec-4][SqlSessionUtils.java:163] - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6c7cdca5] from current transaction
+2019-02-10 19:13:22.007 DEBUG [http-bio-80-exec-4][BaseJdbcLogger.java:159] - ==>  Preparing: select t_borrow.*,t_book.name bookName, t_member.name memberName from t_borrow inner join t_member on t_member.id = t_borrow.mid inner join t_book on t_book.id = t_borrow.bid where 1 = 1 order by t_borrow.borrowDate desc limit ?, ? 
+2019-02-10 19:13:22.009 DEBUG [http-bio-80-exec-4][BaseJdbcLogger.java:159] - ==> Parameters: 0(Integer), 2(Integer)
+2019-02-10 19:13:22.012 DEBUG [http-bio-80-exec-4][BaseJdbcLogger.java:159] - <==      Total: 0
+2019-02-10 19:13:22.014 DEBUG [http-bio-80-exec-4][SqlSessionUtils.java:186] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6c7cdca5]
+2019-02-10 19:13:22.015 DEBUG [http-bio-80-exec-4][SqlSessionUtils.java:284] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6c7cdca5]
+2019-02-10 19:13:22.016 DEBUG [http-bio-80-exec-4][SqlSessionUtils.java:310] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6c7cdca5]
+2019-02-10 19:13:22.017 DEBUG [http-bio-80-exec-4][SqlSessionUtils.java:315] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6c7cdca5]
+2019-02-10 19:13:25.719 DEBUG [http-bio-80-exec-2][SqlSessionUtils.java:97] - Creating a new SqlSession
+2019-02-10 19:13:25.720 DEBUG [http-bio-80-exec-2][SqlSessionUtils.java:128] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2b6fa6b5]
+2019-02-10 19:13:25.721 DEBUG [http-bio-80-exec-2][SpringManagedTransaction.java:87] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@7e316342] will be managed by Spring
+2019-02-10 19:13:25.722 DEBUG [http-bio-80-exec-2][BaseJdbcLogger.java:159] - ==>  Preparing: select count(1) from t_member where 1 = 1 
+2019-02-10 19:13:25.723 DEBUG [http-bio-80-exec-2][BaseJdbcLogger.java:159] - ==> Parameters: 
+2019-02-10 19:13:25.728 DEBUG [http-bio-80-exec-2][BaseJdbcLogger.java:159] - <==      Total: 1
+2019-02-10 19:13:25.729 DEBUG [http-bio-80-exec-2][SqlSessionUtils.java:186] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2b6fa6b5]
+2019-02-10 19:13:25.730 DEBUG [http-bio-80-exec-2][SqlSessionUtils.java:163] - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2b6fa6b5] from current transaction
+2019-02-10 19:13:25.732 DEBUG [http-bio-80-exec-2][BaseJdbcLogger.java:159] - ==>  Preparing: select * from t_member where 1 = 1 order by createDate desc limit ?,? 
+2019-02-10 19:13:25.734 DEBUG [http-bio-80-exec-2][BaseJdbcLogger.java:159] - ==> Parameters: 0(Integer), 2(Integer)
+2019-02-10 19:13:25.739 DEBUG [http-bio-80-exec-2][BaseJdbcLogger.java:159] - <==      Total: 2
+2019-02-10 19:13:25.740 DEBUG [http-bio-80-exec-2][SqlSessionUtils.java:186] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2b6fa6b5]
+2019-02-10 19:13:25.741 DEBUG [http-bio-80-exec-2][SqlSessionUtils.java:284] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2b6fa6b5]
+2019-02-10 19:13:25.741 DEBUG [http-bio-80-exec-2][SqlSessionUtils.java:310] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2b6fa6b5]
+2019-02-10 19:13:25.742 DEBUG [http-bio-80-exec-2][SqlSessionUtils.java:315] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2b6fa6b5]
+2019-02-10 19:13:27.442 DEBUG [http-bio-80-exec-2][SqlSessionUtils.java:97] - Creating a new SqlSession
+2019-02-10 19:13:27.443 DEBUG [http-bio-80-exec-2][SqlSessionUtils.java:128] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3cf93cfe]
+2019-02-10 19:13:27.444 DEBUG [http-bio-80-exec-2][SpringManagedTransaction.java:87] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@7e316342] will be managed by Spring
+2019-02-10 19:13:27.444 DEBUG [http-bio-80-exec-2][BaseJdbcLogger.java:159] - ==>  Preparing: select count(1) from t_book b where 1 = 1 
+2019-02-10 19:13:27.445 DEBUG [http-bio-80-exec-2][BaseJdbcLogger.java:159] - ==> Parameters: 
+2019-02-10 19:13:27.448 DEBUG [http-bio-80-exec-2][BaseJdbcLogger.java:159] - <==      Total: 1
+2019-02-10 19:13:27.449 DEBUG [http-bio-80-exec-2][SqlSessionUtils.java:186] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3cf93cfe]
+2019-02-10 19:13:27.452 DEBUG [http-bio-80-exec-2][SqlSessionUtils.java:163] - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3cf93cfe] from current transaction
+2019-02-10 19:13:27.454 DEBUG [http-bio-80-exec-2][BaseJdbcLogger.java:159] - ==>  Preparing: select b.id id,b.name name,b.author author,b.price price,b.createDate createDate, b.num num,p.id pid,p.name pname from t_book b inner join t_publishing p on p.id = b.pid where 1 = 1 order by b.num desc limit ?,? 
+2019-02-10 19:13:27.457 DEBUG [http-bio-80-exec-2][BaseJdbcLogger.java:159] - ==> Parameters: 0(Integer), 2(Integer)
+2019-02-10 19:13:27.461 DEBUG [http-bio-80-exec-2][BaseJdbcLogger.java:159] - <==      Total: 2
+2019-02-10 19:13:27.463 DEBUG [http-bio-80-exec-2][SqlSessionUtils.java:186] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3cf93cfe]
+2019-02-10 19:13:27.463 DEBUG [http-bio-80-exec-2][SqlSessionUtils.java:284] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3cf93cfe]
+2019-02-10 19:13:27.464 DEBUG [http-bio-80-exec-2][SqlSessionUtils.java:310] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3cf93cfe]
+2019-02-10 19:13:27.464 DEBUG [http-bio-80-exec-2][SqlSessionUtils.java:315] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3cf93cfe]
+2019-02-10 19:13:28.801 DEBUG [http-bio-80-exec-2][SqlSessionUtils.java:97] - Creating a new SqlSession
+2019-02-10 19:13:28.802 DEBUG [http-bio-80-exec-2][SqlSessionUtils.java:128] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5dbc6901]
+2019-02-10 19:13:28.803 DEBUG [http-bio-80-exec-2][SpringManagedTransaction.java:87] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@7e316342] will be managed by Spring
+2019-02-10 19:13:28.804 DEBUG [http-bio-80-exec-2][BaseJdbcLogger.java:159] - ==>  Preparing: select count(1) from t_borrow inner join t_member on t_member.id = t_borrow.mid inner join t_book on t_book.id = t_borrow.bid where 1 = 1 
+2019-02-10 19:13:28.805 DEBUG [http-bio-80-exec-2][BaseJdbcLogger.java:159] - ==> Parameters: 
+2019-02-10 19:13:28.811 DEBUG [http-bio-80-exec-2][BaseJdbcLogger.java:159] - <==      Total: 1
+2019-02-10 19:13:28.815 DEBUG [http-bio-80-exec-2][SqlSessionUtils.java:186] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5dbc6901]
+2019-02-10 19:13:28.816 DEBUG [http-bio-80-exec-2][SqlSessionUtils.java:163] - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5dbc6901] from current transaction
+2019-02-10 19:13:28.819 DEBUG [http-bio-80-exec-2][BaseJdbcLogger.java:159] - ==>  Preparing: select t_borrow.*,t_book.name bookName, t_member.name memberName from t_borrow inner join t_member on t_member.id = t_borrow.mid inner join t_book on t_book.id = t_borrow.bid where 1 = 1 order by t_borrow.borrowDate desc limit ?, ? 
+2019-02-10 19:13:28.821 DEBUG [http-bio-80-exec-2][BaseJdbcLogger.java:159] - ==> Parameters: 0(Integer), 2(Integer)
+2019-02-10 19:13:28.823 DEBUG [http-bio-80-exec-2][BaseJdbcLogger.java:159] - <==      Total: 0
+2019-02-10 19:13:28.825 DEBUG [http-bio-80-exec-2][SqlSessionUtils.java:186] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5dbc6901]
+2019-02-10 19:13:28.826 DEBUG [http-bio-80-exec-2][SqlSessionUtils.java:284] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5dbc6901]
+2019-02-10 19:13:28.826 DEBUG [http-bio-80-exec-2][SqlSessionUtils.java:310] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5dbc6901]
+2019-02-10 19:13:28.827 DEBUG [http-bio-80-exec-2][SqlSessionUtils.java:315] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5dbc6901]
+2019-02-10 19:13:33.120 DEBUG [http-bio-80-exec-7][SqlSessionUtils.java:97] - Creating a new SqlSession
+2019-02-10 19:13:33.121 DEBUG [http-bio-80-exec-7][SqlSessionUtils.java:128] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@78640885]
+2019-02-10 19:13:33.121 DEBUG [http-bio-80-exec-7][SpringManagedTransaction.java:87] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@7e316342] will be managed by Spring
+2019-02-10 19:13:33.122 DEBUG [http-bio-80-exec-7][BaseJdbcLogger.java:159] - ==>  Preparing: select count(1) from t_book b where 1 = 1 
+2019-02-10 19:13:33.122 DEBUG [http-bio-80-exec-7][BaseJdbcLogger.java:159] - ==> Parameters: 
+2019-02-10 19:13:33.124 DEBUG [http-bio-80-exec-7][BaseJdbcLogger.java:159] - <==      Total: 1
+2019-02-10 19:13:33.125 DEBUG [http-bio-80-exec-7][SqlSessionUtils.java:186] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@78640885]
+2019-02-10 19:13:33.125 DEBUG [http-bio-80-exec-7][SqlSessionUtils.java:163] - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@78640885] from current transaction
+2019-02-10 19:13:33.126 DEBUG [http-bio-80-exec-7][BaseJdbcLogger.java:159] - ==>  Preparing: select b.id id,b.name name,b.author author,b.price price,b.createDate createDate, b.num num,p.id pid,p.name pname from t_book b inner join t_publishing p on p.id = b.pid where 1 = 1 order by b.num desc limit ?,? 
+2019-02-10 19:13:33.127 DEBUG [http-bio-80-exec-7][BaseJdbcLogger.java:159] - ==> Parameters: 0(Integer), 2(Integer)
+2019-02-10 19:13:33.130 DEBUG [http-bio-80-exec-7][BaseJdbcLogger.java:159] - <==      Total: 2
+2019-02-10 19:13:33.133 DEBUG [http-bio-80-exec-7][SqlSessionUtils.java:186] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@78640885]
+2019-02-10 19:13:33.133 DEBUG [http-bio-80-exec-7][SqlSessionUtils.java:284] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@78640885]
+2019-02-10 19:13:33.134 DEBUG [http-bio-80-exec-7][SqlSessionUtils.java:310] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@78640885]
+2019-02-10 19:13:33.134 DEBUG [http-bio-80-exec-7][SqlSessionUtils.java:315] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@78640885]
+2019-02-10 19:13:35.348 DEBUG [http-bio-80-exec-7][SqlSessionUtils.java:97] - Creating a new SqlSession
+2019-02-10 19:13:35.349 DEBUG [http-bio-80-exec-7][SqlSessionUtils.java:128] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1b6d7001]
+2019-02-10 19:13:35.350 DEBUG [http-bio-80-exec-7][SpringManagedTransaction.java:87] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@7e316342] will be managed by Spring
+2019-02-10 19:13:35.352 DEBUG [http-bio-80-exec-7][BaseJdbcLogger.java:159] - ==>  Preparing: select count(1) from t_member where 1 = 1 
+2019-02-10 19:13:35.354 DEBUG [http-bio-80-exec-7][BaseJdbcLogger.java:159] - ==> Parameters: 
+2019-02-10 19:13:35.356 DEBUG [http-bio-80-exec-7][BaseJdbcLogger.java:159] - <==      Total: 1
+2019-02-10 19:13:35.357 DEBUG [http-bio-80-exec-7][SqlSessionUtils.java:186] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1b6d7001]
+2019-02-10 19:13:35.358 DEBUG [http-bio-80-exec-7][SqlSessionUtils.java:163] - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1b6d7001] from current transaction
+2019-02-10 19:13:35.360 DEBUG [http-bio-80-exec-7][BaseJdbcLogger.java:159] - ==>  Preparing: select * from t_member where 1 = 1 order by createDate desc limit ?,? 
+2019-02-10 19:13:35.362 DEBUG [http-bio-80-exec-7][BaseJdbcLogger.java:159] - ==> Parameters: 0(Integer), 2(Integer)
+2019-02-10 19:13:35.365 DEBUG [http-bio-80-exec-7][BaseJdbcLogger.java:159] - <==      Total: 2
+2019-02-10 19:13:35.366 DEBUG [http-bio-80-exec-7][SqlSessionUtils.java:186] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1b6d7001]
+2019-02-10 19:13:35.366 DEBUG [http-bio-80-exec-7][SqlSessionUtils.java:284] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1b6d7001]
+2019-02-10 19:13:35.366 DEBUG [http-bio-80-exec-7][SqlSessionUtils.java:310] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1b6d7001]
+2019-02-10 19:13:35.367 DEBUG [http-bio-80-exec-7][SqlSessionUtils.java:315] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1b6d7001]
+2019-02-10 19:23:36.356 DEBUG [localhost-startStop-1][LogFactory.java:135] - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2019-02-10 19:23:37.741 DEBUG [localhost-startStop-1][LoggerFactory.java:19] - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2019-02-10 19:23:37.763 INFO [localhost-startStop-1][Version.java:30] - HV000001: Hibernate Validator 5.4.1.Final
+2019-02-10 19:23:38.497 DEBUG [localhost-startStop-1][DefaultTraversableResolver.java:70] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-02-10 19:23:38.507 DEBUG [localhost-startStop-1][ConfigurationImpl.java:163] - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2019-02-10 19:23:38.508 DEBUG [localhost-startStop-1][ConfigurationImpl.java:185] - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2019-02-10 19:23:38.510 DEBUG [localhost-startStop-1][ConfigurationImpl.java:199] - Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy69
+2019-02-10 19:23:38.513 DEBUG [localhost-startStop-1][ValidationXmlParser.java:103] - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2019-02-10 19:23:38.516 DEBUG [localhost-startStop-1][ResourceLoaderHelper.java:51] - Trying to load META-INF/validation.xml via user class loader
+2019-02-10 19:23:38.517 DEBUG [localhost-startStop-1][ResourceLoaderHelper.java:58] - Trying to load META-INF/validation.xml via TCCL
+2019-02-10 19:23:38.517 DEBUG [localhost-startStop-1][ResourceLoaderHelper.java:64] - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2019-02-10 19:23:38.518 DEBUG [localhost-startStop-1][ValidationXmlParser.java:110] - No META-INF/validation.xml found. Using annotation based configuration only.
+2019-02-10 19:24:03.596 DEBUG [http-bio-80-exec-4][ConstraintDescriptorImpl.java:640] - Adding composing constraint: ConstraintDescriptorImpl{annotation=javax.validation.constraints.NotNull, payloads=[], hasComposingConstraints=true, isReportAsSingleInvalidConstraint=false, elementType=FIELD, definedOn=DEFINED_LOCALLY, groups=[interface javax.validation.groups.Default], attributes={message={javax.validation.constraints.NotNull.message}, groups=[Ljava.lang.Class;@65bf91b1, payload=[Ljava.lang.Class;@4b467253}, constraintType=GENERIC}.
+2019-02-10 19:24:03.602 DEBUG [http-bio-80-exec-4][ConstraintDescriptorImpl.java:640] - Adding composing constraint: ConstraintDescriptorImpl{annotation=javax.validation.constraints.NotNull, payloads=[], hasComposingConstraints=true, isReportAsSingleInvalidConstraint=false, elementType=FIELD, definedOn=DEFINED_LOCALLY, groups=[interface javax.validation.groups.Default], attributes={message={javax.validation.constraints.NotNull.message}, groups=[Ljava.lang.Class;@1b510f5e, payload=[Ljava.lang.Class;@60f50759}, constraintType=GENERIC}.
+2019-02-10 19:24:03.836 INFO [http-bio-80-exec-4][Log4j2Impl.java:106] - {dataSource-1} inited
+2019-02-10 19:24:04.112 DEBUG [http-bio-80-exec-4][SqlSessionUtils.java:97] - Creating a new SqlSession
+2019-02-10 19:24:04.118 DEBUG [http-bio-80-exec-4][SqlSessionUtils.java:128] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1dc7e5bd]
+2019-02-10 19:24:04.127 DEBUG [http-bio-80-exec-4][SpringManagedTransaction.java:87] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@34b82f6a] will be managed by Spring
+2019-02-10 19:24:04.131 DEBUG [http-bio-80-exec-4][BaseJdbcLogger.java:159] - ==>  Preparing: select * from t_user where username = ? 
+2019-02-10 19:24:04.181 DEBUG [http-bio-80-exec-4][BaseJdbcLogger.java:159] - ==> Parameters: hg(String)
+2019-02-10 19:24:04.215 DEBUG [http-bio-80-exec-4][BaseJdbcLogger.java:159] - <==      Total: 1
+2019-02-10 19:24:04.216 DEBUG [http-bio-80-exec-4][SqlSessionUtils.java:186] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1dc7e5bd]
+2019-02-10 19:24:04.217 DEBUG [http-bio-80-exec-4][SqlSessionUtils.java:284] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1dc7e5bd]
+2019-02-10 19:24:04.219 DEBUG [http-bio-80-exec-4][SqlSessionUtils.java:310] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1dc7e5bd]
+2019-02-10 19:24:04.219 DEBUG [http-bio-80-exec-4][SqlSessionUtils.java:315] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1dc7e5bd]
+2019-02-10 19:24:09.041 DEBUG [http-bio-80-exec-7][SqlSessionUtils.java:97] - Creating a new SqlSession
+2019-02-10 19:24:09.042 DEBUG [http-bio-80-exec-7][SqlSessionUtils.java:128] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1ae276a2]
+2019-02-10 19:24:09.081 DEBUG [http-bio-80-exec-7][SpringManagedTransaction.java:87] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@34b82f6a] will be managed by Spring
+2019-02-10 19:24:09.082 DEBUG [http-bio-80-exec-7][BaseJdbcLogger.java:159] - ==>  Preparing: select count(1) from t_member where 1 = 1 
+2019-02-10 19:24:09.083 DEBUG [http-bio-80-exec-7][BaseJdbcLogger.java:159] - ==> Parameters: 
+2019-02-10 19:24:09.085 DEBUG [http-bio-80-exec-7][BaseJdbcLogger.java:159] - <==      Total: 1
+2019-02-10 19:24:09.086 DEBUG [http-bio-80-exec-7][SqlSessionUtils.java:186] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1ae276a2]
+2019-02-10 19:24:09.086 DEBUG [http-bio-80-exec-7][SqlSessionUtils.java:163] - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1ae276a2] from current transaction
+2019-02-10 19:24:09.087 DEBUG [http-bio-80-exec-7][BaseJdbcLogger.java:159] - ==>  Preparing: select * from t_member where 1 = 1 order by createDate desc limit ?,? 
+2019-02-10 19:24:09.088 DEBUG [http-bio-80-exec-7][BaseJdbcLogger.java:159] - ==> Parameters: 0(Integer), 2(Integer)
+2019-02-10 19:24:09.091 DEBUG [http-bio-80-exec-7][BaseJdbcLogger.java:159] - <==      Total: 2
+2019-02-10 19:24:09.092 DEBUG [http-bio-80-exec-7][SqlSessionUtils.java:186] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1ae276a2]
+2019-02-10 19:24:09.092 DEBUG [http-bio-80-exec-7][SqlSessionUtils.java:284] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1ae276a2]
+2019-02-10 19:24:09.093 DEBUG [http-bio-80-exec-7][SqlSessionUtils.java:310] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1ae276a2]
+2019-02-10 19:24:09.093 DEBUG [http-bio-80-exec-7][SqlSessionUtils.java:315] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1ae276a2]
+2019-02-10 19:24:10.370 DEBUG [http-bio-80-exec-8][SqlSessionUtils.java:97] - Creating a new SqlSession
+2019-02-10 19:24:10.374 DEBUG [http-bio-80-exec-8][SqlSessionUtils.java:128] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2a4c97f0]
+2019-02-10 19:24:10.377 DEBUG [http-bio-80-exec-8][SpringManagedTransaction.java:87] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@34b82f6a] will be managed by Spring
+2019-02-10 19:24:10.378 DEBUG [http-bio-80-exec-8][BaseJdbcLogger.java:159] - ==>  Preparing: select count(1) from t_book b where 1 = 1 
+2019-02-10 19:24:10.379 DEBUG [http-bio-80-exec-8][BaseJdbcLogger.java:159] - ==> Parameters: 
+2019-02-10 19:24:10.382 DEBUG [http-bio-80-exec-8][BaseJdbcLogger.java:159] - <==      Total: 1
+2019-02-10 19:24:10.383 DEBUG [http-bio-80-exec-8][SqlSessionUtils.java:186] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2a4c97f0]
+2019-02-10 19:24:10.383 DEBUG [http-bio-80-exec-8][SqlSessionUtils.java:163] - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2a4c97f0] from current transaction
+2019-02-10 19:24:10.384 DEBUG [http-bio-80-exec-8][BaseJdbcLogger.java:159] - ==>  Preparing: select b.id id,b.name name,b.author author,b.price price,b.createDate createDate, b.num num,p.id pid,p.name pname from t_book b inner join t_publishing p on p.id = b.pid where 1 = 1 order by b.num desc limit ?,? 
+2019-02-10 19:24:10.385 DEBUG [http-bio-80-exec-8][BaseJdbcLogger.java:159] - ==> Parameters: 0(Integer), 2(Integer)
+2019-02-10 19:24:10.390 DEBUG [http-bio-80-exec-8][BaseJdbcLogger.java:159] - <==      Total: 2
+2019-02-10 19:24:10.391 DEBUG [http-bio-80-exec-8][SqlSessionUtils.java:186] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2a4c97f0]
+2019-02-10 19:24:10.392 DEBUG [http-bio-80-exec-8][SqlSessionUtils.java:284] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2a4c97f0]
+2019-02-10 19:24:10.393 DEBUG [http-bio-80-exec-8][SqlSessionUtils.java:310] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2a4c97f0]
+2019-02-10 19:24:10.393 DEBUG [http-bio-80-exec-8][SqlSessionUtils.java:315] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2a4c97f0]
+2019-02-10 19:24:11.801 DEBUG [http-bio-80-exec-9][SqlSessionUtils.java:97] - Creating a new SqlSession
+2019-02-10 19:24:11.802 DEBUG [http-bio-80-exec-9][SqlSessionUtils.java:128] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3895381c]
+2019-02-10 19:24:11.804 DEBUG [http-bio-80-exec-9][SpringManagedTransaction.java:87] - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@34b82f6a] will be managed by Spring
+2019-02-10 19:24:11.807 DEBUG [http-bio-80-exec-9][BaseJdbcLogger.java:159] - ==>  Preparing: select count(1) from t_borrow inner join t_member on t_member.id = t_borrow.mid inner join t_book on t_book.id = t_borrow.bid where 1 = 1 
+2019-02-10 19:24:11.808 DEBUG [http-bio-80-exec-9][BaseJdbcLogger.java:159] - ==> Parameters: 
+2019-02-10 19:24:11.813 DEBUG [http-bio-80-exec-9][BaseJdbcLogger.java:159] - <==      Total: 1
+2019-02-10 19:24:11.814 DEBUG [http-bio-80-exec-9][SqlSessionUtils.java:186] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3895381c]
+2019-02-10 19:24:11.816 DEBUG [http-bio-80-exec-9][SqlSessionUtils.java:163] - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3895381c] from current transaction
+2019-02-10 19:24:11.816 DEBUG [http-bio-80-exec-9][BaseJdbcLogger.java:159] - ==>  Preparing: select t_borrow.*,t_book.name bookName, t_member.name memberName from t_borrow inner join t_member on t_member.id = t_borrow.mid inner join t_book on t_book.id = t_borrow.bid where 1 = 1 order by t_borrow.borrowDate desc limit ?, ? 
+2019-02-10 19:24:11.817 DEBUG [http-bio-80-exec-9][BaseJdbcLogger.java:159] - ==> Parameters: 0(Integer), 2(Integer)
+2019-02-10 19:24:11.819 DEBUG [http-bio-80-exec-9][BaseJdbcLogger.java:159] - <==      Total: 0
+2019-02-10 19:24:11.819 DEBUG [http-bio-80-exec-9][SqlSessionUtils.java:186] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3895381c]
+2019-02-10 19:24:11.820 DEBUG [http-bio-80-exec-9][SqlSessionUtils.java:284] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3895381c]
+2019-02-10 19:24:11.820 DEBUG [http-bio-80-exec-9][SqlSessionUtils.java:310] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3895381c]
+2019-02-10 19:24:11.822 DEBUG [http-bio-80-exec-9][SqlSessionUtils.java:315] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3895381c]

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	<mapper namespace="com.hg.dao.BorrowDao">
+	<resultMap type="Borrow" id="BorrowMap">
+		<id property="id" column="id" />
+		<association property="member" javaType="Member">
+			<id property="id" column="mid"/>
+			<result property="name" column="memberName"/>
+		</association>
+		<association property="book" javaType="Book">
+			<id property="id" column="bid" />
+			<result property="name" column="bookName"/>
+		</association>
+	</resultMap>
+	<sql id="where">
+		<if test="bookName != null and bookName.length() > 0">
+			and t_book.name like '%${bookName}%'
+		</if>
+		<if test="memberName != null and memberName.length() > 0">
+			and t_member.name like '%${memberName}%'
+		</if>
+	</sql>
+	 <select id="list" resultMap="BorrowMap">
+	 	select t_borrow.*,t_book.name bookName, t_member.name memberName 
+	 	from t_borrow inner join t_member on t_member.id = t_borrow.mid
+	 				  inner join t_book on t_book.id = t_borrow.bid
+	 				  where 1 = 1 
+	 				  <include refid="where" />
+	 				  order by t_borrow.borrowDate desc limit #{begin}, #{size}
+	 </select>
+	 <select id="count" resultType="int">
+	 	select count(1) from t_borrow
+	 		inner join t_member on t_member.id = t_borrow.mid
+	 		inner join t_book on t_book.id = t_borrow.bid
+	 		where 1 = 1
+	 		<include refid="where" />
+	 </select>
+	 <insert id="save" parameterType="Borrow">
+	 	insert into t_borrow values(null,#{member.id},#{book.id},#{borrowDate},null)
+	 </insert>
+	 <select id="getBookIdById" parameterType="int" resultType="int">
+	 	select bid from t_borrow where id = #{id}
+	 </select>
+	 <update id ="update" parameterType="Member">
+	 	update t_borrow set returnDate = #{date} where id = #{id}
+	 </update>
+	 <delete id="delete" parameterType="int">
+	 	delete from t_borrow where id = #{id} and returnDate is not null
+	 </delete>
+	</mapper>

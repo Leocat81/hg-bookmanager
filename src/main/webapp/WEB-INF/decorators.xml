@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 装饰器配置，装饰器或组件默认路径 -->
+<decorators defaultdir="/WEB-INF/views/decorators">
+	<!-- 不装饰的URL -->
+    <excludes>
+   		<pattern>/register</pattern>
+        <pattern>/login</pattern>
+        <pattern>/error</pattern>
+        <pattern>/assets/*</pattern>
+    </excludes>
+
+    <!-- 主页装饰器组件 -->
+    <decorator name="nav" page="nav.jsp" />
+    <decorator name="header" page="header.jsp" />
+    <decorator name="footer" page="footer.jsp" />
+    <decorator name="menu" page="menu.jsp" />
+
+	<!-- 主页装饰器 -->
+    <decorator name="main" page="main.jsp">
+        <pattern>/*</pattern>
+    </decorator>
+</decorators>

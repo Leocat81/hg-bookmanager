@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<settings>
+		<!-- 自动映射全局配置 -->
+		<setting name="autoMappingBehavior" value="FULL"/>
+		<!-- Log4j2配置 -->
+		<setting name="logImpl" value="LOG4J2"/>
+	</settings>
+	<typeAliases>
+		<!-- 实体类别名 -->
+		<typeAlias type="com.hg.pojo.User" alias="User" />
+		<typeAlias type="com.hg.pojo.Member" alias="Member" />
+		<typeAlias type="com.hg.pojo.Book" alias="Book" />
+		<typeAlias type="com.hg.pojo.Publishing" alias="Publishing" />
+		<typeAlias type="com.hg.pojo.Borrow" alias="Borrow" />
+	</typeAliases>
+</configuration>

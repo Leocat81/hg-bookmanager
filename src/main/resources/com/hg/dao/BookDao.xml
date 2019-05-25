@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  <mapper namespace="com.hg.dao.BookDao">
+  <sql id="where">
+	<if test="name != null &amp;&amp; name.length() > 0">
+	  			and b.name like CONCAT(CONCAT('%',#{name}), '%')
+	  		</if>
+	  		<if test="author != null &amp;&amp; author.length() > 0">
+	  			and b.author like CONCAT(CONCAT('%',#{author}),'%')
+	  		</if>
+  </sql>
+  <sql id="keyword">
+  	<if test="keyword != null and keyword.length() > 0">
+  		and b.name like '%${keyword}%' or b.author like '%${keyword}%'
+  	</if>
+  </sql>
+  	<resultMap type="Book" id="bookMap">
+  		<id property="id" column="id" />
+  		<association property="publishing" javaType="Publishing">
+  			<id property="id" column="pid"/>
+  			<result property="name" column="pname"/>
+  		</association>
+  	</resultMap>
+  	<select id="list" resultMap="bookMap">
+  		select b.id id,b.name name,b.author author,b.price price,b.createDate createDate, b.num num,p.id pid,p.name pname 
+  		 from t_book b inner join t_publishing p on p.id = b.pid where 1 = 1 
+  		 <include refid="where" />
+  		 order by b.num desc limit #{begin},#{size}   
+  	</select>
+  	<select id="get" parameterType="int" resultType="Book">
+  		select b.id id,b.name name,b.author author,b.price price,b.createDate createDate, b.num num,b.summary summary,p.id pid,p.name pname 
+  		 from t_book b inner join t_publishing p on p.id = b.pid where b.id = #{id} 
+  	</select>
+  	<select id="count" resultType="int">
+	  	select count(1) from t_book b where 1 = 1 
+	  	<include refid="where" />
+  	</select>
+  	<select id="countByName" parameterType="String" resultType="int">
+  		select count(1) from t_book where name=#{name}
+  	</select>
+  	<select id="countIdByName" resultType="int">
+  		select count(1) from t_book where name=#{name} and id != #{id}
+  	</select>
+  	<select id="countByKeyword" parameterType="String" resultType="int">
+  		select count(1) from t_book b where num > 0
+  		<include refid="keyword" />
+  	</select>
+  	<select id="listByKeyword" resultMap="bookMap">
+  		select b.id, b.name,b.author,b.createDate,p.id pid,p.name pname
+  		from t_book b inner join t_publishing p on p.id = b.pid where b.num > 0 
+  		<include refid="keyword" />
+  		order by b.num desc limit #{pageIndex}, #{pageSize}
+  	</select> 
+  	<select id="selectBorrow" resultType="int">
+  		select count(1) from t_borrow where bid = #{id}
+  	</select>
+  	<insert id="save" parameterType="Book">
+  		insert into t_book values(null, #{name}, #{author}, #{price}, #{publishing.id}, #{createDate}, ${num}, #{summary})
+  	</insert>
+  	<delete id="delete" parameterType="int">
+  		delete from t_book where id = #{id} 
+  	</delete>
+  	<update id="update" parameterType="Book">
+		update t_book set name = #{name}, author = #{author}, price = #{price}, pid = #{publishing.id}, createDate = #{createDate}, num = #{num}, summary = #{summary} where id = #{id}
+  	</update>
+  	<update id="updateNumById">
+  		update t_book set num = num + #{num} where id = #{id}
+  	</update>
+  </mapper>
